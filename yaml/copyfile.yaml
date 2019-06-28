@@ -1,0 +1,12 @@
+---
+- name: Copy a file to everybody
+  hosts: napyaclass
+  tasks: 
+- name: Using the copy command
+  copy: 
+    src: yamlearn.yaml
+    dest: yamllearn.yaml
+  #we just defined the play level key words
+
+
+  

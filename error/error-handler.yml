@@ -1,0 +1,9 @@
+---
+- name: First Error Handeling
+  hosts: planet-express
+
+  tasks:
+    - block:
+      - shell: "echo 'My simgle task ran' > example.txt"
+      - shell: "echo 'My second task ran' >> example.txt"
+      - shell: "echo 'My third task ran' >> example.txt"
